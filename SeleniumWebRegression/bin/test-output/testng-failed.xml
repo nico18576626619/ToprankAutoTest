@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [收银机2.0自动化测试]" parallel="tests">
+  <parameter name="config" value="config.properties"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="点菜结账流程(failed)" parallel="tests">
+    <classes>
+      <class name="com.testng.BydLogin">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Start" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testng.BydLogin -->
+    </classes>
+  </test> <!-- 点菜结账流程(failed) -->
+</suite> <!-- Failed suite [收银机2.0自动化测试] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="config" value="config.properties"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="不用等测试Demo(failed)">
+    <classes>
+      <class name="com.testng.BydLogin">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Start" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testng.BydLogin -->
+    </classes>
+  </test> <!-- 不用等测试Demo(failed) -->
+</suite> <!-- Failed suite [Suite] -->
