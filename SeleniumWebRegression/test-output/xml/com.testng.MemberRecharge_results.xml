@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="点菜结账流程"
+<testsuite name="会员充值"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="77.416">
+           time="46.966">
   <properties />
-            <testcase name="Start" time="77.416" classname="com.testng.BydLogin">
+            <testcase name="Start" time="46.966" classname="com.testng.MemberRecharge">
                 <failure type="java.lang.AssertionError"
-                  message="异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: .//*[@id=&apos;account_con_right&apos;]/div[2]/ul/li[1]/span
+                  message="异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: html/body/div[4]/div/div[2]/div/div[1]/div[3]/button[2]
 Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:12:12&apos;
 System info: host: &apos;HuPan-PC&apos;, ip: &apos;192.168.6.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: driver.version: unknown"
               >
-<![CDATA[java.lang.AssertionError: 异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: .//*[@id='account_con_right']/div[2]/ul/li[1]/span
+<![CDATA[java.lang.AssertionError: 异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: html/body/div[4]/div/div[2]/div/div[1]/div[3]/button[2]
 Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:12:12'
 System info: host: 'HuPan-PC', ip: '192.168.6.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
 Driver info: driver.version: unknown
   org.testng.Assert.fail(Assert.java:93)
-  com.testng.BydLogin.Start(BydLogin.java:67)
+  com.testng.MemberRecharge.Start(MemberRecharge.java:67)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

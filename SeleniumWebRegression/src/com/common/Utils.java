@@ -1723,14 +1723,22 @@ public class Utils {
 		Utils.SetElementValue(driver, data);
 	}
 	
-	 void findToast(WebDriver driver,String text){
+	 public static void findToast(WebDriver driver,String text){
 
 		try {
-		final WebDriverWait wait = new WebDriverWait(driver,2);
+		final WebDriverWait wait = new WebDriverWait(driver,10000);
 		Assert.assertNotNull(wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[contains(@text,'"+ text + "')]"))));
 		System.out.println("找到了toast");
 		} catch (Exception e) {
 			throw new AssertionError("找不到"+text);
 		}
+	}
+	 
+	 public static String getCurClassName() {
+		// TODO Auto-generated method stub
+		String classname=Thread.currentThread().getStackTrace()[1].getClassName();
+		int temp=classname.lastIndexOf(".");
+		String sname=classname.substring(temp+1);
+		return sname;
 	}
 }

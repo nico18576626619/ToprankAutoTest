@@ -32,7 +32,7 @@ import org.testng.annotations.Test;
 
 import com.common.Utils;
 @SuppressWarnings("unused")
-public class QueryMember {
+public class SettleAccounts {
 	
 	WebDriver driver;
 	int waitTime = 60;
@@ -57,8 +57,11 @@ public class QueryMember {
 				 {
 				  	CreateChromeDriver();
 				  	ServiceLogin(xlsfile,"login","login");
-				  	TestExec(xlsfile,"querymember","querymember");
-	
+				  	TestExec(xlsfile,"opentable","opentable");
+//				  	Utils.findToast(driver, "开台成功!");
+				  	TestExec(xlsfile,"orderdishes","orderdishes");
+				  	TestExec(xlsfile,"cleartable","cleartable");
+				
 				 }catch(Exception e)
 				 {
 					 MyTakesScreenshot();
@@ -132,5 +135,6 @@ public class QueryMember {
 		String sname=classname.substring(temp+1);
 		return sname;
 	}
+	
 	
 }

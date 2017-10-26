@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="查询会员"
+<testsuite name="点菜结账流程"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="29.239">
+           time="90.737">
   <properties />
   
   
-            <testcase name="Start" time="29.239" classname="com.testng.QueryMember" />
+            <testcase name="Start" time="90.737" classname="com.testng.SettleAccounts" />
       
 </testsuite>

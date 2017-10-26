@@ -32,7 +32,7 @@ import org.testng.annotations.Test;
 
 import com.common.Utils;
 @SuppressWarnings("unused")
-public class QueryMember {
+public class MemberRecharge {
 	
 	WebDriver driver;
 	int waitTime = 60;
@@ -51,14 +51,16 @@ public class QueryMember {
 			//测试用例文件名
 		    String datafile = props.getProperty(getCurClassName());
 		    System.out.println(datafile);
-		    
+		    if(datafile==null || datafile==""){
+		    	throw new AssertionError("测试用例文件名不能为空");
+		    }
 			File xlsfile = new File(datafile);
 			  try
 				 {
 				  	CreateChromeDriver();
 				  	ServiceLogin(xlsfile,"login","login");
 				  	TestExec(xlsfile,"querymember","querymember");
-	
+				  	TestExec(xlsfile,"recharge","recharge");
 				 }catch(Exception e)
 				 {
 					 MyTakesScreenshot();

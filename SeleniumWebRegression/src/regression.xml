@@ -2,18 +2,23 @@
 <suite name="收银机2.0自动化测试" parallel="tests">
 	<parameter name="config" value="config.properties" />
 	 
-	<test name="点菜结账流程">
+	<test name="点菜结账流程" enabled="false">
 		<classes>
-		     <class name="com.testng.BydLogin" />
+		     <class name="com.testng.SettleAccounts" />
 		</classes>
 	</test>	
 	
-	<test name="查询会员">
+	<test name="查询会员" enabled="false">
 		<classes>
 		     <class name="com.testng.QueryMember" />
 		</classes>
 	</test>	
-
+	
+	<test name="会员充值" enabled="true">
+		<classes>
+		     <class name="com.testng.MemberRecharge" />
+		</classes>
+	</test>	
 	
 	
 	

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="收银机2.0自动化测试" duration-ms="32471" started-at="2017-10-25T08:35:45Z" finished-at="2017-10-25T08:36:17Z">
+  <suite name="收银机2.0自动化测试" duration-ms="47878" started-at="2017-10-26T12:33:35Z" finished-at="2017-10-26T12:34:23Z">
     <groups>
     </groups>
-    <test name="点菜结账流程" duration-ms="25815" started-at="2017-10-25T08:35:45Z" finished-at="2017-10-25T08:36:10Z">
-      <class name="com.testng.BydLogin">
-        <test-method status="FAIL" signature="Start(java.lang.String)[pri:0, instance:com.testng.BydLogin@4d50efb8]" name="Start" duration-ms="23824" started-at="2017-10-25T16:35:45Z" finished-at="2017-10-25T16:36:08Z">
+    <test name="会员充值" duration-ms="47878" started-at="2017-10-26T12:33:35Z" finished-at="2017-10-26T12:34:23Z">
+      <class name="com.testng.MemberRecharge">
+        <test-method status="FAIL" signature="Start(java.lang.String)[pri:0, instance:com.testng.MemberRecharge@4d50efb8]" name="Start" duration-ms="46635" started-at="2017-10-26T20:33:35Z" finished-at="2017-10-26T20:34:21Z">
           <params>
             <param index="0">
               <value>
@@ -17,12 +17,18 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[异常null]]>
+              <![CDATA[异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: html/body/div[4]/div/div[2]/div/div[1]/div[3]/button[2]
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:12:12'
+System info: host: 'HuPan-PC', ip: '192.168.6.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 异常null
+              <![CDATA[java.lang.AssertionError: 异常Timed out after 10 seconds waiting for presence of element located by: By.xpath: html/body/div[4]/div/div[2]/div/div[1]/div[3]/button[2]
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:12:12'
+System info: host: 'HuPan-PC', ip: '192.168.6.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
 	at org.testng.Assert.fail(Assert.java:93)
-	at com.testng.BydLogin.Start(BydLogin.java:65)
+	at com.testng.MemberRecharge.Start(MemberRecharge.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,30 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testng.BydLogin@4d50efb8]" name="afterClass" is-config="true" duration-ms="1949" started-at="2017-10-25T16:36:08Z" finished-at="2017-10-25T16:36:10Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testng.MemberRecharge@4d50efb8]" name="afterClass" is-config="true" duration-ms="1221" started-at="2017-10-26T20:34:21Z" finished-at="2017-10-26T20:34:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.testng.BydLogin -->
-    </test> <!-- 点菜结账流程 -->
-    <test name="查询会员" duration-ms="32471" started-at="2017-10-25T08:35:45Z" finished-at="2017-10-25T08:36:17Z">
-      <class name="com.testng.QueryMember">
-        <test-method status="PASS" signature="Start(java.lang.String)[pri:0, instance:com.testng.QueryMember@4abdb505]" name="Start" duration-ms="31032" started-at="2017-10-25T16:35:45Z" finished-at="2017-10-25T16:36:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[config.properties]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Start -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.testng.QueryMember@4abdb505]" name="afterClass" is-config="true" duration-ms="1401" started-at="2017-10-25T16:36:16Z" finished-at="2017-10-25T16:36:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.testng.QueryMember -->
-    </test> <!-- 查询会员 -->
+      </class> <!-- com.testng.MemberRecharge -->
+    </test> <!-- 会员充值 -->
   </suite> <!-- 收银机2.0自动化测试 -->
 </testng-results>
