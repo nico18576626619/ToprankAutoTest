@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="百度搜索"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.910">
+  <properties />
+  
+  
+            <testcase name="Start" time="11.910" classname="com.testng.Baisearch" />
+      
+</testsuite>

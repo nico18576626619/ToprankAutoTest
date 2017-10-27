@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="点菜结账流程"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="97.401">
+  <properties />
+  
+  
+            <testcase name="Start" time="97.401" classname="com.testng.SettleAccounts" />
+      
+</testsuite>

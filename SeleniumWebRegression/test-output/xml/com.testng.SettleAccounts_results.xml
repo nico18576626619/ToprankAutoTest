@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="90.737">
+           time="98.740">
   <properties />
   
   
-            <testcase name="Start" time="90.737" classname="com.testng.SettleAccounts" />
+            <testcase name="Start" time="98.740" classname="com.testng.SettleAccounts" />
       
 </testsuite>

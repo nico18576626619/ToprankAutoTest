@@ -6,14 +6,14 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="会员充值(failed)" parallel="tests">
+  <test name="百度搜索(failed)" parallel="tests">
     <classes>
-      <class name="com.testng.MemberRecharge">
+      <class name="com.testng.Baisearch">
         <methods>
-          <include name="afterClass"/>
           <include name="Start" invocation-numbers="0"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.testng.MemberRecharge -->
+      </class> <!-- com.testng.Baisearch -->
     </classes>
-  </test> <!-- 会员充值(failed) -->
+  </test> <!-- 百度搜索(failed) -->
 </suite> <!-- Failed suite [收银机2.0自动化测试] -->

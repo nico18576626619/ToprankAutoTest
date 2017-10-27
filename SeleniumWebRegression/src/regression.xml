@@ -14,9 +14,14 @@
 		</classes>
 	</test>	
 	
-	<test name="会员充值" enabled="true">
+	<test name="会员充值" enabled="false">
 		<classes>
 		     <class name="com.testng.MemberRecharge" />
+		</classes>
+	</test>	
+	<test name="百度搜索" enabled="true">
+		<classes>
+		     <class name="com.testng.Baisearch" />
 		</classes>
 	</test>	
 	

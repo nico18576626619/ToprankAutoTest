@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="29.239">
+           time="34.973">
   <properties />
   
   
-            <testcase name="Start" time="29.239" classname="com.testng.QueryMember" />
+            <testcase name="Start" time="34.973" classname="com.testng.QueryMember" />
       
 </testsuite>
